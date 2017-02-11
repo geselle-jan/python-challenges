@@ -15,5 +15,5 @@ print ''
 print 'expected distance between p1 and p2 = 14,14...'
 print 'computed distance between p1 and p2 = ' + str(p1.distance_to(p2))
 print ''
-print 'expected angle between p1 and p2 = 135.0'
+print 'expected angle between p1 and p2 = 45.0'
 print 'computed angle between p1 and p2 = ' + str(p1.angle_to(p2))

@@ -14,5 +14,5 @@ class Point():
         delta_x = point.x - self.x
         delta_y = point.y - self.y
         angle_rad = atan2(delta_y, delta_x)
-        angle_deg = angle_rad * 180.0 / pi + 90.0
+        angle_deg = angle_rad * 180.0 / pi
         return angle_deg

@@ -2,8 +2,8 @@ class Point():
     def __init__(self, x, y):
         pass
 
-    def distanceTo(self, point):
+    def distance_to(self, point):
         pass
 
-    def angleTo(self, point):
+    def angle_to(self, point):
         pass

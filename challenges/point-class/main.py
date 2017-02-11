@@ -13,7 +13,7 @@ print 'p1 = (' + str(x1) + ', ' + str(y1) + ')'
 print 'p2 = (' + str(x2) + ', ' + str(y2) + ')'
 print ''
 print 'expected distance between p1 and p2 = 14,14...'
-print 'computed distance between p1 and p2 = ' + str(p1.distanceTo(p2))
+print 'computed distance between p1 and p2 = ' + str(p1.distance_to(p2))
 print ''
-print 'expected angle between p1 and p2 = 135'
-print 'computed angle between p1 and p2 = ' + str(p1.angleTo(p2))
+print 'expected angle between p1 and p2 = 135.0'
+print 'computed angle between p1 and p2 = ' + str(p1.angle_to(p2))

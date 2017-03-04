@@ -1,6 +1,8 @@
-value = 1238989888
-length = 22
-print 'This is the output: ' +  str(value).zfill(length)[-length:]
+def leftpad(value, length):
+    output = str(value).zfill(length)[-length:]
+    return output
+print 'This is the output'
+print leftpad(12323,12)
 
 
 

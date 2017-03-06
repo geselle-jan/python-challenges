@@ -1,19 +1,23 @@
+import unittest
 from Point import Point
 
-x1 = 0
-y1 = 0
 
-x2 = 10
-y2 = 10
+class TestPointClass(unittest.TestCase):
 
-p1 = Point(x1, y1)
-p2 = Point(x2, y2)
+    def setUp(self):
+        self.points = [
+            Point( 0,  0),
+            Point(10, 10)
+        ]
 
-print 'p1 = (' + str(x1) + ', ' + str(y1) + ')'
-print 'p2 = (' + str(x2) + ', ' + str(y2) + ')'
-print ''
-print 'expected distance between p1 and p2 = 14,14...'
-print 'computed distance between p1 and p2 = ' + str(p1.distance_to(p2))
-print ''
-print 'expected angle between p1 and p2 = 45.0'
-print 'computed angle between p1 and p2 = ' + str(p1.angle_to(p2))
+    def test_distance(self):
+        dist1 = self.points[0].distance_to(self.points[1])
+        self.assertAlmostEqual(dist1, 14.14, 2)
+
+    def test_angle(self):
+        angle1 = self.points[0].angle_to(self.points[1])
+        self.assertAlmostEqual(angle1, 45.0, 1)
+
+
+if __name__ == '__main__':
+    unittest.main()
